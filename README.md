@@ -12,4 +12,4 @@ El objectivo es implementar un sistema especificamente para los gastos, que se r
 
 Creación y Configuración del Repositório
 
-El siguiente enlance contiene toda la información respecto a la configuración del repositório. 
+El siguiente enlance contiene toda la información respecto a la [configuración del repositório](docs/Hito0.md).
