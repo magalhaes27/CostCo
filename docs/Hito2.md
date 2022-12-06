@@ -11,11 +11,11 @@ Para el desarrollo de la aplicación he creado una carpeta "testes" donde he adi
 
 en seguida ejecutamos los tests
 
-![](img/test_vista_mOk.png)
+![](img/testar_vista1.png)
 
 el resultados el positivo cuando todo esté bien, ahora supongamos que la dirección de la url sea una desconocida
 
-![](img/test_vista_merror.png
+![](img/test_vista_merror.png)
 
 Este es el resultado
 
