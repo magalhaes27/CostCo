@@ -1,11 +1,13 @@
 # Register your models here.
-from .models import AddPresupuesto_info, Perfil_Usuario
+from .models import Gastos
 from django.contrib import admin
 from django.contrib.sessions.models import Session
 
-class AddPresupuesto_infoAdmin(admin.ModelAdmin):
-    list_display=("usuario","cantidad","fecha","categoria","add_presupuesto")
+class GastoAdmin(admin.ModelAdmin):
+    list_display = ('montante', 'descripcion', 'categoria', 'fecha',)
+    search_fields = ('descripcion', 'categoria', 'fecha',)
 
-admin.site.register(AddPresupuesto_info,AddPresupuesto_infoAdmin)
-admin.site.register(Session)
-admin.site.register(Perfil_Usuario)
+    list_per_page = 5
+
+
+admin.site.register(Gastos, GastoAdmin)

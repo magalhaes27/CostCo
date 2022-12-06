@@ -1,0 +1,46 @@
+{% extends 'Control_app/base.html' %}
+
+{% block content %}
+<div class="center-column">
+    <h1>
+        <center>CostCo</center>
+    </h1>
+
+    <!-- Total -->
+    <br />
+    <h4>Total Anual: {{total_anual}}€</h4>
+    <h4>Total Mensual: {{total_mensual}}€</h4>
+    <br />
+
+    <!-- Tabla que lista los gastos-->
+    <div class="col-md-12">
+        <h5>GASTOS MENSUAL</h5>
+        <hr>
+        <div class="card card-body">
+            <table class="table table">
+                <!-- Encabezallos -->
+                <tr>
+                    <th>Fecha</th>
+                    <th>Montante</th>
+                    <th>Categoria</th>
+                    <th>Descripcion</th>
+                    <th><a href="{% url 'Control_app:adicionar' %}" class="btn btn-primary">adicionar</a></button></th>
+                </tr>
+
+                <!-- Renderizando todos los gastos del més -->
+                {% for gasto in gastos %}
+                <tr>
+                    <td>{{gasto.fecha}}</td>
+                    <td>{{gasto.montante}}</td>
+                    <td>{{gasto.categoria}}</td>
+                    <td>{{gasto.descripcion}}</td>
+                    <td><a href="{% url 'Control_app:actualizar' gasto.id %}">Actualizar</a></td>
+                    <td><a href="{% url 'Control_app:eliminar' gasto.id %}">Eliminar</a></td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

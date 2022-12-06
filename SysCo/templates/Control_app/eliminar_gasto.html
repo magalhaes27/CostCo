@@ -1,0 +1,23 @@
+{% extends 'Control_app/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6">
+        <div class="card card-body">
+
+            <p>Estas seguro que deseas eliminar "{{gasto}}"?</p>
+
+            <form action="{% url 'Control_app:eliminar' gasto.id %}" method="POST">
+                {% csrf_token %}
+
+                <!-- Cancelar -->
+                <a class="btn btn-warning" href="{% url 'Control_app:inicio' %}">Cancelar</a>
+
+                <!-- Confirmar -->
+                <input class="btn btn-danger" type="submit" name="Confirmar">
+            </form>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'Control_app/base.html' %}
+
+{% block content %}
+
+
+            <form method="POST" action="">
+                {% csrf_token %} {{gasto_form.as_p}}
+
+                <input class="btn btn-primary" type="submit" value="Adicionar">
+            </form>
+
+           
+
+{% endblock %}

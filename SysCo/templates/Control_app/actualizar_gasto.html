@@ -1,0 +1,22 @@
+{% extends 'Control_app/base.html' %}
+
+{% block content %}
+
+<div class="expense-col">
+    <div class="card card-body">
+        <center>
+
+            <form method="POST" action="">
+                {% csrf_token %} {{gasto_form.as_p}}
+
+                <input class="btn btn-primary" type="submit" value="Actualizar">
+            </form>
+
+            <a class="btn btn-sm btn-danger" href="#">Borrar</a> {% for message in messages %}
+            <p id="message">{{message}}</p>
+            {% endfor %}
+        </center>
+    </div>
+</div>
+
+{% endblock %}
