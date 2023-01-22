@@ -1,5 +1,4 @@
 from django.test import TestCase, Client
-from Control_app.models import Gastos
 from django.urls import reverse
 import json
 
