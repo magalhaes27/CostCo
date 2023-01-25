@@ -13,6 +13,9 @@ El objectivo es implementar un sistema especificamente para los gastos, que se r
 Los siguientes elances corresponden a la descripciones de las etapas del desarrollo del proyecto
 
 [configuración del repositório](docs/Hito0.md).
+
 [Descripción de las HU](docs/Hito1.md)
+
 [Herramientas para entorno de los tests ](docs/Hito2.md)
+
 [Configuración y creación del contenedor de prueba](docs/Hito3.md)
