@@ -13,5 +13,14 @@ He usado la herramienta [Coverage](https://coverage.readthedocs.io/en/7.1.0/) pa
 En esta parte nos interesa resolver el test en el fichero *models.py* donde se encuentra las clases definidas para nuestra base de datos.
 ![](img/covering_test.png)
 
-En esta imagen mustra que es necesario testear la clase *Gastos*, como resultado. Despues de testear se tiene como resultado:
+**Definición del test**
+
+![](img/models_test.png)
+
+
+
+En esta imagen muestra que es necesario testear la clase *Gastos*, como resultado. Despues de testear se tiene como resultado:
+![](img/run_test.png)
+
+Podemos ver que yano tenemos la linea en rojo en la clase Gastos
 ![](img/coverage_result.png)
