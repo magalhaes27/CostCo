@@ -10,6 +10,9 @@ adquirirla.
 
 El objectivo es implementar un sistema especificamente para los gastos, que se realizará por la interacción del usuário con la app. El usuario tendrá el poder de adicionar, editar, modificar o eliminar categorias, tipo de ingreso,...etc. 
 
-Creación y Configuración del Repositório
+Los siguientes elances corresponden a la descripciones de las etapas del desarrollo del proyecto
 
-El siguiente enlance contiene toda la información respecto a la [configuración del repositório](docs/Hito0.md).
+[configuración del repositório](docs/Hito0.md).
+[Descripción de las HU](docs/Hito1.md)
+[Herramientas para entorno de los tests ](docs/Hito2.md)
+[Configuración y creación del contenedor de prueba](docs/Hito3.md)
