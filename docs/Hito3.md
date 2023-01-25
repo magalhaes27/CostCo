@@ -3,7 +3,7 @@
 Para este paso primer se ha definido que sistema operativo podria crear una imagen con menos capacidad he analizado el [Linux mint](https://linuxmint.com/) y [Linux Alpine](https://hub.docker.com/_/alpine) como se puede observar el SO Alpine tiene menos capacidad.
 ![](img/image_comparison1.png)
 
-Al final ha resultado en el siguiente ![DOCKERFILE][Dockerfile]
+Al final ha resultado en el siguiente [DOCKERFILE](/Dockerfile)
 
 Montando el imagen
 
