@@ -1,0 +1,22 @@
+name: Django docker CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches:  ["main"]
+
+jobs:
+  
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+     
+      - name: Build the Docker image
+        uses: actions/checkout@v3
+        run: docker build -t testing .
+      - name: Test
+        run: docker run -t -v 'pwd':/costco/test.py testing
+       
