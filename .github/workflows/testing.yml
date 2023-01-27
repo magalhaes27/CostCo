@@ -24,11 +24,13 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USER }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-
+      - name: Set up Docker Buildx
+        uses: docker/setup-buidx-action@v2
     
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
           context: .
+          file: ./Dockerfile
           push: true
-          tags: josepilartes/costco:testing
+          tags: ${{ secrets.DOCKER_USER }}/costco:testing2
