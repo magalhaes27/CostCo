@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build -t test2 . -f ./SysCo/Dockerfile
     - name: Test
-      run: docker run -t -v `pwd` :/Control_app/tests magalhaes27/CostCo
+      run: docker run -t -v `pwd` :/Control_app/tests magalhaes27/costco
