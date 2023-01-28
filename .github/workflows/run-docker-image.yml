@@ -17,4 +17,6 @@ jobs:
     - name: Build the Docker image
       run: docker build -t test2 .
     - name: Test
-      run: docker run -t -v  `pwd`:/SysCo/Control_app/tests/* test2
+      run: |
+        pip install coverage
+        coverage run manage.py tests
