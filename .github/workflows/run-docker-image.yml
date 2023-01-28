@@ -17,5 +17,5 @@ jobs:
     - name: Build the Docker image
       run: docker build -t test2 . -f ./SysCo/Dockerfile 
     - name: Test
-      run: docker run test2
+      run: docker run test2:latest
 #-f ./SysCo/Dockerfile
