@@ -31,7 +31,8 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
-      
-          file: ./SysCo/Dockerfile
+
+          context: .
+          file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USER }}/costco:testing2
