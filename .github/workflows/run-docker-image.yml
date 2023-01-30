@@ -13,14 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build -t test2 . -f ./SysCo/Dockerfile
-    - name: Create and start virtual environment
-      run: |
-          python -m venv venv
-          source venv/bin/activate
+    - uses: actions/checkout@v2
+    #- name: Prueba
+   #   run: docker build -t test2 . -f ./SysCo/Dockerfile
+    #- name: Instalar Dependencias
+     # run:  pip install
     - name: Test
-      run: docker run test2
+      run: docker run josepilartes/costco:testing2
       
 #-f ./SysCo/Dockerfile
