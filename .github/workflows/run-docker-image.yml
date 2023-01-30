@@ -14,16 +14,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-      with:
-
-          context: .
-          file: ./SysCo/Dockerfile
     - name: Build the Docker image
-      run: docker build -t test2 .
+      run: docker build -t test2 . -f ./SysCo/Dockerfile
     - name: Create and start virtual environment
       run: |
           python -m venv venv
           source venv/bin/activate
     - name: Test
       run: docker run test2
+      
 #-f ./SysCo/Dockerfile
