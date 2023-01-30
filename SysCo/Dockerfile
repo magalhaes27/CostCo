@@ -1,6 +1,8 @@
 FROM python:3.10.6-alpine
 
-WORKDIR ./SysCo
+ENV PYTHONUNBUFFERED 1
+
+WORKDIR /app
 
 COPY ./SysCo/requirements.txt requirements.txt
 RUN pip install -r requirements.txt
