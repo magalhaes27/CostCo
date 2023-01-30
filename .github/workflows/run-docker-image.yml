@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build -t test2 .
+      run: docker build -t test2 . -f ./SysCo/Dockerfile
     - name: Test
-      run: docker run -t -v `pwd`:/costco/sysco/tests test2
+      run: docker run test2
 #-f ./SysCo/Dockerfile
