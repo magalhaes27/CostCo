@@ -7,6 +7,6 @@ WORKDIR /app
 COPY ./SysCo/requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-COPY ./SysCo . 
+COPY . . 
 
 CMD ["python", "manage.py", "test"]
