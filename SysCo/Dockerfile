@@ -7,10 +7,6 @@ WORKDIR /app
 COPY ./SysCo/requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-<<<<<<< HEAD
-COPY . /app 
-=======
-COPY . ./app
->>>>>>> fearure1
+COPY . /app
 
 CMD ["python", "manage.py", "test"]
