@@ -7,3 +7,8 @@ Como se puede observar la imagen fue creada y  por la definición de los secrets
 ![](img/docker_githubaction.png)
 
 ![](img/docker_hubtesting.png)
+
+Las siguientes imagenes muestran el resultado del segundo fichero yml en cual se ha ejecutado las pruebas.
+![](img/test_github.png)
+
+![](img/test_github2.png)
